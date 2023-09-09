@@ -1,0 +1,48 @@
+.user-list {
+  &__img {
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__gender {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+    text-align: center;
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  &__content {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+    color: #fff0f5;
+
+    @media screen and (max-width: 400px) {
+      font-size: 14px;
+    }
+  }
+}

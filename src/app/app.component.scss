@@ -1,0 +1,33 @@
+.users {
+  padding: 50px 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.header {
+  padding: 30px;
+  border-bottom: 2px solid #c6c6c6;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    color: #274c5b;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}

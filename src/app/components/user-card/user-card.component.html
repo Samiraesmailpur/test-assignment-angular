@@ -1,0 +1,27 @@
+<img
+  class="user-list__img"
+  [src]="user.picture.large"
+  [alt]="user.name.first"
+/>
+<p class="user-list__name">
+  {{ user.name.title }} {{ user.name.first }} {{ user.name.last }}
+</p>
+<p class="user-list__gender">
+  Gender: <span>{{ user.gender }}</span>
+</p>
+<div class="user-list__content">
+  <p>Country: {{ user.location.country }}</p>
+  <p>
+    City: <span>{{ user.location.city }}</span>
+  </p>
+  <p>State: {{ user.location.state }}</p>
+  <p>
+    Street: {{ user.location.street.number }}
+    {{ user.location.street.name }}
+  </p>
+  <p>Email: {{ user.email }}</p>
+</div>
+<weather
+  [latitude]="user.location.coordinates.latitude"
+  [longitude]="user.location.coordinates.longitude"
+></weather>

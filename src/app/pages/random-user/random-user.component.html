@@ -1,0 +1,9 @@
+<ul class="user-list">
+  <li class="user-list__item" *ngIf="user">
+    <user-card [user]="user"></user-card>
+    <div class="user-list__box-btn">
+      <button class="user-list__btn" (click)="saveUser(user)">Save user</button>
+    </div>
+  </li>
+  <li class="loading" *ngIf="!user">Loading...</li>
+</ul>
