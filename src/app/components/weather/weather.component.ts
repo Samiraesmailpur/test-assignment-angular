@@ -23,7 +23,7 @@ export class WeatherComponent {
           this.weather.current_weather.temperature =
             result.current_weather.temperature;
         });
-    }, 1000);
+    }, 5 * 60 * 1000);
   }
 
   ngOnDestroy() {
