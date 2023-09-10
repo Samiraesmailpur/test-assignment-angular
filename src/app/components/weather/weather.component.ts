@@ -9,6 +9,7 @@ import { WeatherService } from '../../services/weather.service';
 export class WeatherComponent {
   @Input() latitude: any;
   @Input() longitude: any;
+
   weather: any = null;
   updateInterval: any;
 

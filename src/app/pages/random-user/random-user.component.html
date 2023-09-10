@@ -2,8 +2,21 @@
   <li class="user-list__item" *ngIf="user">
     <user-card [user]="user"></user-card>
     <div class="user-list__box-btn">
-      <button class="user-list__btn" (click)="saveUser(user)">Save user</button>
+      <button
+        class="user-list__btn"
+        (click)="saveUser(user)"
+        *ngIf="!userSaved"
+      >
+        Save user
+      </button>
+      <button class="user-list__btn" *ngIf="userSaved">User is saved</button>
     </div>
   </li>
   <li class="loading" *ngIf="!user">Loading...</li>
 </ul>
+<map
+  *ngIf="user"
+  [latitude]="user.location.coordinates.latitude"
+  [longitude]="user.location.coordinates.longitude"
+  [thumbnail]="user.picture.thumbnail"
+></map>

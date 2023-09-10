@@ -8,6 +8,7 @@ import { ApiService } from '../../services/random-user.service';
 })
 export class RandomUsersComponent {
   user: any;
+  userSaved: boolean = false;
 
   constructor(private apiService: ApiService) {
     this.user = null;
@@ -19,6 +20,7 @@ export class RandomUsersComponent {
     });
   }
   saveUser(user: any) {
+    this.userSaved = true;
     const currentUserList = localStorage.getItem('users');
 
     if (currentUserList !== null) {
